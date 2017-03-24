@@ -14,7 +14,7 @@ MAINTAINER FansinZhao 171388204@qq.com
 ADD run.sh /run.sh
 ADD ojdbc6-11.2.0.3.jar /opt/solr/server/lib/ojdbc6-11.2.0.3.jar
 # simplechinese replace
-#ADD managed-schema /opt/solr/example/example-DIH/solr/db/conf/managed-schema
+ADD managed-schema /opt/solr/example/example-DIH/solr/db/conf/managed-schema
 
 # 4 run
 CMD ["solr-foreground"]

@@ -1,0 +1,11 @@
+<dataConfig>
+    <dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://172.17.0.4:3306/db1" user="root" password="123456" />
+    <document>
+        <entity name="company" query="select * from company" pk="id" transformer="DateFormatTransformer"
+                deltaQuery="select * from company">
+            <field column="TEXT" name="text" />
+            <field column="ID" name="id" />
+            <field column="CREATEDATE" name="createtime" />
+        </entity>
+    </document>
+</dataConfig>

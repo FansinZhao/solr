@@ -434,6 +434,8 @@
   <field name="dcterms_modified" type="tdates"/>
   <field name="features" type="strings"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="text" type="string" indexed="true" stored="true"/>
+  <!--<field name="createtime" type="tdates" indexed="true" stored="true"/>-->
   <field name="inStock" type="booleans"/>
   <field name="includes" type="strings"/>
   <field name="keywords" type="strings"/>
