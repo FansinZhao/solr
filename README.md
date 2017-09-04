@@ -3,8 +3,14 @@
 
 solr 添加 中文分词, mysql/orale数据导入
 
-# HOW TO
+# HOW TO USE
 
+    docker run --name my-solr -it -d fansin/solr-zh
+
+visit http://172.17.0.2:8983/solr/ , `172.17.0.2` use your container IP
+    
+# HOW TO BUILD
+    
     docker build -t my-solr ./
     docker run -it --name my-solr my-solr
 
